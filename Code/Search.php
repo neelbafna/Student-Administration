@@ -138,9 +138,9 @@ if(isset($_POST["submit"]))
 	<script>
 	jQuery(document).ready(function($) {
 	  if (window.history && window.history.pushState) {
-		window.history.pushState('forward', null, './login.html');
+		window.history.pushState('forward', null, './#forward');
 		$(window).on('popstate', function() {
-		  window.location = "login.html";
+		  window.location = "index.html";
 		});
 	  }
 	});
